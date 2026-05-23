@@ -42,8 +42,8 @@
     <section class="hero">
       <div class="hero-grid">
         <div>
-          <div class="badge">💻 보직간부 대상 AI App 개발 실습</div>
-          <h1>AI와 함께 만드는<br />실전형 App 개발 실습</h1>
+          <div class="badge">💻 솔루션사업부 팀장/그룹장 대상 AI App 개발 실습</div>
+          <h1>Codex Desktop App을 활용한 AI 실습</h1>
           <p class="lead">실습 예제 페이지에서 Prompt를 복사한 뒤 Codex Desktop App에 붙여넣어 실행합니다. 마지막에는 Padlet을 통해 AI 활용에 대한 생각을 작성하고 토론합니다.</p>
         </div>
         <aside class="timebox">
@@ -54,7 +54,6 @@
         </aside>
       </div>
     </section>
-
     <section class="section">
       <h2>진행 일정</h2>
       <div class="schedule">
@@ -63,35 +62,31 @@
         <div class="schedule-card"><b>3. Padlet 토론</b><span>30분 · 의견 작성 및 토론</span></div>
       </div>
     </section>
-
     <section class="section">
       <h2>실습 예제</h2>
-      <p style="color:var(--muted); margin-top:0;">실습 1·2는 Codex Desktop App에서 직접 실행하고, 실습 3은 확장 예제로 소개합니다.</p>
+      <p style="color:var(--muted); margin-top:0;">실습 1·2·3중 2개를 선택해 Codex Desktop App에서 직접 실행합니다.</p>
       <div id="practices"></div>
     </section>
-
     <div class="footer">AI Practice Workshop · Prompt를 복사해서 Codex Desktop App에 붙여넣으세요.</div>
   </main>
-
   <script>
     const practices = [
       {
         title: '실습 1. 마케팅 예산 배분 ML 분석 웹앱', level: 'B2B 분석', time: 'Codex 실습', codex: true,
         desc: '글로벌 이커머스 데이터를 분석해 고객군별 ROI를 예측하고, 어떤 고객군에 마케팅 예산을 우선 배분해야 하는지 판단하는 React 기반 분석 웹앱을 만듭니다.',
-        prompt: `온라인 쇼핑몰 회사의 마케팅 예산 배분을 위한 머신러닝 분석 웹앱을 만들어주세요.\n\n아래 공개 Kaggle 데이터셋을 내려받아 고객/주문/캠페인/수익성 데이터를 분석하고,\n어떤 고객군에 예산을 쓰면 ROI가 높은지 판단할 수 있게 해주세요.\n\nhttps://www.kaggle.com/datasets/akrambelha/global-e-commerce-dataset-1m-records-20242026\n\n모든 작업은 market_analysis 폴더에서 진행하고,\n필요한 환경과 라이브러리는 직접 확인해 설치해주세요.\n\n결과는 React 기반 B2B 스타일 웹앱으로 만들어주세요.\n\nKPI, 차트, 고객군별 우선순위, 추천/제외 이유, 리더용 요약 리포트를 볼 수 있게 해주세요.\n\n완성되면 실행해서 바로 볼 수 있는 링크를 알려주세요.`
+        prompt: `온라인 쇼핑몰 회사의 마케팅 예산 배분을 위한 머신러닝 분석 웹앱을 만들어주세요.\n아래 공개 Kaggle 데이터셋을 내려받아 고객/주문/캠페인/수익성 데이터를 분석하고,\n어떤 고객군에 예산을 쓰면 ROI가 높은지 판단할 수 있게 해주세요.\nhttps://www.kaggle.com/datasets/akrambelha/global-e-commerce-dataset-1m-records-20242026\n모든 작업은 market_analysis 폴더에서 진행하고,\n필요한 환경과 라이브러리는 직접 확인해 설치해주세요.\n결과는 React 기반 B2B 스타일 웹앱으로 만들어주세요.\nKPI, 차트, 고객군별 우선순위, 추천/제외 이유, 리더용 요약 리포트를 볼 수 있게 해주세요.\n완성되면 실행해서 바로 볼 수 있는 링크를 알려주세요.`
       },
       {
         title: '실습 2. 영수증 정산 자동화 웹앱', level: '문서 AI', time: 'Codex 실습', codex: true,
         desc: '공개 영수증 데이터셋을 사용해 업체명, 날짜, 주소, 금액을 추출하고 검토가 필요한 영수증을 자동으로 분류하는 정산 검수 웹앱을 만듭니다.',
-        prompt: `영수증 정산 업무를 자동화하는 웹앱을 만들어주세요.\n\n아래 공개 영수증 데이터셋을 사용해주세요.\n\nhttps://huggingface.co/datasets/jsdnrs/ICDAR2019-SROIE\n\n영수증 이미지에서 업체명, 날짜, 주소, 금액을 추출하고,\n정산 검수자가 바로 확인할 수 있는 화면으로 정리해주세요.\n\n금액 이상치, 필드 누락, 중복 의심처럼 사람이 다시 봐야 할 영수증도 자동으로 골라주세요.\n\n결과는 React 웹앱으로 만들어주세요.\n\n한 화면에서 영수증 목록, 원본 이미지, 추출된 필드, 검토 사유, 권장 조치를 확인할 수 있어야 합니다.\n\n지출 통계와 정산 요약 리포트도 함께 보여주세요.\n\n처음에는 100장 정도만 처리해서 빠르게 확인할 수 있게 해주세요.\n\n작업 폴더는 receipt_audit_workbench로 만들고,\n필요한 설치와 실행까지 처리한 뒤 바로 볼 수 있는 링크를 알려주세요.`
+        prompt: `영수증 정산 업무를 자동화하는 웹앱을 만들어주세요.\n아래 공개 영수증 데이터셋을 사용해주세요.\nhttps://huggingface.co/datasets/jsdnrs/ICDAR2019-SROIE\n영수증 이미지에서 업체명, 날짜, 주소, 금액을 추출하고,\n정산 검수자가 바로 확인할 수 있는 화면으로 정리해주세요.\n금액 이상치, 필드 누락, 중복 의심처럼 사람이 다시 봐야 할 영수증도 자동으로 골라주세요.\n결과는 React 웹앱으로 만들어주세요.\n한 화면에서 영수증 목록, 원본 이미지, 추출된 필드, 검토 사유, 권장 조치를 확인할 수 있어야 합니다.\n지출 통계와 정산 요약 리포트도 함께 보여주세요.\n처음에는 100장 정도만 처리해서 빠르게 확인할 수 있게 해주세요.\n작업 폴더는 receipt_audit_workbench로 만들고,\n필요한 설치와 실행까지 처리한 뒤 바로 볼 수 있는 링크를 알려주세요.`
       },
       {
-        title: '실습 3. 컨테이너 적재 계획 3D 웹앱', level: '확장 예제', time: '소개용', codex: false,
+        title: '실습 3. 컨테이너 적재 계획 3D 웹앱', level: '확장 예제',time: 'Codex 실습', codex: true,
         desc: '3D packing 데이터를 참고해 화물 적재 순서, 적재 가능 여부, 중량 균형, 작업 지시서를 시각화하는 React 기반 3D 시뮬레이션 웹앱 예제입니다.',
-        prompt: `컨테이너 적재 계획을 자동으로 만들어주는 3D 웹앱을 만들어주세요.\n\n아래 공개 3D packing 데이터셋을 참고해서 진행해주세요.\n\nhttps://data.mendeley.com/datasets/kxcb2frrnv\n\n화물 목록을 분석해서 어떤 화물을 어디에, 어떤 순서로 실어야 하는지 계산해주세요.\n\n실을 수 없는 화물이 있으면 사유도 정리해주세요.\n\n작업자가 적재 순서를 따라 할 수 있도록 3D 시뮬레이션 화면으로 보여주세요.\n\n결과 화면에서는 화물 목록, 3D 컨테이너 화면, 현재 적재 단계, 적재율, 중량 균형, 미적재 화물 목록, 작업 지시서를 볼 수 있게 해주세요.\n\nReact 기반 웹앱으로 만들어주시고,\n작업 폴더는 container_loading_solver로 만들고,\n필요한 설치와 실행까지 처리한 뒤 바로 볼 수 있는 링크를 알려주세요.`
+        prompt: `컨테이너 적재 계획을 자동으로 만들어주는 3D 웹앱을 만들어주세요.\n아래 공개 3D packing 데이터셋을 참고해서 진행해주세요.\nhttps://data.mendeley.com/datasets/kxcb2frrnv\n화물 목록을 분석해서 어떤 화물을 어디에, 어떤 순서로 실어야 하는지 계산해주세요.\n실을 수 없는 화물이 있으면 사유도 정리해주세요.\n작업자가 적재 순서를 따라 할 수 있도록 3D 시뮬레이션 화면으로 보여주세요.\n결과 화면에서는 화물 목록, 3D 컨테이너 화면, 현재 적재 단계, 적재율, 중량 균형, 미적재 화물 목록, 작업 지시서를 볼 수 있게 해주세요.\nReact 기반 웹앱으로 만들어주시고,\n작업 폴더는 container_loading_solver로 만들고,\n필요한 설치와 실행까지 처리한 뒤 바로 볼 수 있는 링크를 알려주세요.`
       }
     ];
-
     const root = document.getElementById('practices');
     practices.forEach((item, idx) => {
       const el = document.createElement('article');
@@ -108,7 +103,6 @@
         <pre>${item.prompt.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}</pre>`;
       root.appendChild(el);
     });
-
     document.querySelectorAll('button[data-index]').forEach(btn => {
       btn.addEventListener('click', async () => {
         const text = practices[Number(btn.dataset.index)].prompt;
